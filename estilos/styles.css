@@ -1,0 +1,216 @@
+/* formato pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*formato principal*/
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color:#415380;
+    color: #E4E4E4;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    position: relative;
+}
+.toogle{
+    margin-right: 20px;
+    font-size: 30px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+    font-family: sans-serif;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+@media screen and (max-width:800px){
+    .toogle{
+        display: inline-block;
+    }
+}
+
+.brand span {
+    color: #F2F2F2;
+    font-size: x-large;
+}
+
+.brand h2{
+    color: #C7CCB9;
+    font-size: x-large;
+}
+
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a {
+    color: #C7CCB9;
+    text-decoration: none;
+}
+
+.main{
+    margin: 0 auto;
+    width: 70vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+h1{
+    font-size: 3em;
+    color: #C7CCB9;
+}
+
+.main img{
+    width: 50%;
+    height: 50%;
+    border: 3px solid;
+    margin: auto;
+}
+
+/*seccion sobre mi*/
+
+.about{
+    
+    background-color: #AEE5D1;
+    width: 100vw;
+    height: 100vh;
+    padding: 5em;
+    display: grid;
+    align-content: center;
+    color: #415380;
+}
+
+.about h2 {
+    font-size: x-large;
+    color: #415380;
+    
+}
+
+.about img{
+    width: 100%;
+    height: 100%;
+    padding-top: 1em;
+}
+
+/*seccion portfolio*/
+
+.portfolio-heading{
+    width: 100%;
+    height: 100%;
+    padding: 5em;
+    background-color: #415380;
+    color: #E4E4E4;
+    align-content: center;
+}
+
+
+
+.portfolio img{
+    
+    padding: 1em;
+    align-content: center;
+    width: 50%;
+    height: 50%;
+}
+
+/*seccion contacto*/
+
+.heading-contact{
+    color: #415380;
+}
+.heading-contact h2{
+    color: #415380;
+}
+
+.seccion-contacto{
+    width: 100vw;
+    height: 100vh;
+    padding: 5em;
+    margin: 0 auto;
+    background-color: #AEE5D1;
+}
+
+.contacto_form{
+    width: 30vw;
+    margin-top: 2em;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.contacto_form h5{
+    color: #415380;
+}
+
+.contacto_form input{
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid;
+
+}
+
+.contacto_form textarea{
+    height: 150px;
+    width: 350px;
+    background: none;
+    padding: 1.5em;
+    border: 2px solid;
+
+}
+
+.boton{
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: #415380;
+    border-radius: 20px;
+    color: #E4E4E4;
+
+}
+
+/*seccion footer*/
+
+.pie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color: #415380;
+    color: #E4E4E4;
+}
+
+.pie h3{
+    font-size: 3em;
+}
+
+.pie h2{
+    font-size: 1.5em;
+}
+
+.redes_sociales a{
+    color: #E4E4E4;
+    width: 10px;
+    height: 10px;
+    padding: 10px 20px;
+}
